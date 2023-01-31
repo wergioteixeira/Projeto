@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\Style-atualizar-sistema.css" />
+    <title>Atualizar Cadastro</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <script>
+      // função do botão sair
+      function logout() {
+        if (confirm("Deseja sair?")) {
+          window.location.href = "tela_login.php";
+        }
+      }
+      // validar atualizar cadastro
+      function atualizar() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var cpf = document.getElementById("cpf").value;
+        var endereco = document.getElementById("endereco").value;
+        var servicos = document.getElementById("servicos").value;
+
+        // validação dos campos
+        if (
+          name == "" ||
+          email == "" ||
+          phone == "" ||
+          cpf == "" ||
+          endereco == "" ||
+          servicos == ""
+        ) {
+          alert("Por favor preencha todos os campos obrigatórios");
+          return;
+        }
+        // exibir mensagem de sucesso
+        alert("Cadastro atualizado com sucesso!");
+        location.href = "tela_sistema.html";
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <img src="LOGO-FACE-PASS.png" alt="" />
+      <h1>Atualizar Cadastro</h1>
+      <form id="form-atualizar" method="submit">
+        <label for="name">Nome:</label>
+        <input type="text" placeholder="name" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email" id="email" name="email" />
+
+        <label for="phone">Telefone de Contato*</label>
+        <input type="tel" placeholder="phone" id="phone" />
+
+        <label for="email">CPF*</label>
+        <input type="tel" placeholder="cpf" id="cpf" />
+
+        <label for="email">Endereço*</label>
+        <input type="tel" placeholder="endereco" id="endereco" />
+
+        <!-- <label for="text">Selecione o serviço*</label>
+        <input type="text" placeholder="servicos" id="servicos" list="opcoes" />
+        <datalist id="opcoes" name="opcoes">
+          <option value="Serviço 1"></option>
+          <option value="Serviço 2"></option>
+          <option value="Serviço 3"></option>
+        </datalist>
+
+        <label for="text">Selecione seu perfil*</label>
+        <input type="text" list="opcao2" />
+        <datalist id="opcao2" name="opcao2">
+          <option value="Pessoa Jurídica"></option>
+          <option value="Pessoa Física"></option>
+        </datalist> -->
+        <input
+          type="submit"
+          value="Atualizar"
+          onclick="atualizar(); return false;"
+        />
+      </form>
+    </main>
+
+    <section class="images">
+      <h2 class="slogan">Informações do Usuário</h2>
+      <img src="image/Mulher.png" alt="" />
+      <div class="info-usuario">
+        <p>Usuário: Ana</p>
+        <p>Email: ana@gmail.com</p>
+        <p>Seus créditos: R$ 30,00</p>
+        <input type="file" id="fileInput" style="display: none" />
+
+        <button id="changeImageButton">Trocar foto</button>
+
+        <button id="voltar">
+          <a href="tela_sistema.html">
+            <i class="fas fa-arrow-left"></i> Voltar
+          </a>
+        </button>
+      </div>
+      <div class="circle"></div>
+    </section>
+
+    <button class="botao-sair" onclick="logout()">Sair</button>
+  </body>
+</html>

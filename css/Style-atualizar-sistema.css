@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+
+/* Resetar formatação padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.582);
+  color: rgb(120, 121, 121);
+  font-weight: 500;
+  display: flex;
+  min-height: 100vh;
+  background-image: radial-gradient(
+    circle farthest-corner at 40% 20%,
+    rgb(232, 242, 252) 45%,
+    rgba(176, 218, 230, 0.63) 90.8%
+  );
+}
+
+/* Botão Sair Formatação */
+.botao-sair {
+  background-color: #d43350;
+  width: 70px;
+  height: 40px;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.botao-sair:hover {
+  background-color: #832b2b;
+  transition: all 0.8s ease-in-out;
+}
+
+main {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+}
+
+main h1 {
+  color: #3aaa8e;
+  font-size: 2.1rem;
+  margin-bottom: 0.5rem;
+}
+
+main .alternative {
+  margin-top: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.445);
+  position: relative;
+}
+
+/* imagem Tela Login */
+main .image-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  texto Adicionar credito - Senha - Forma de pagamento */
+main form label {
+  display: flex;
+  flex-direction: column;
+}
+
+main form label span {
+  font-size: 1.1rem;
+}
+
+/*  personalizar input formulario*/
+main form input {
+  background: #323541;
+  width: 300px;
+  height: 50px;
+  padding: 0 1.1rem;
+  margin-top: 1rem;
+  outline: none;
+  color: rgba(166, 166, 166);
+  font-size: 1rem;
+  border: 1px solid #040b18;
+  border-radius: 8px;
+}
+
+/* personalizar botão Confirmar  */
+main form input[type="submit"] {
+  cursor: pointer;
+  width: 50%;
+  margin-top: 4rem;
+  border: none;
+  border-radius: 32px;
+  background: #3aaa8e;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/*  Botão trocar foto e Atualizar Cadastro */
+#changeImageButton {
+  cursor: pointer;
+  width: 15%;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #3aaa8e;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 11px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*  Texto Botão Atualizar Cadastro*/
+#changeImageButton a {
+  cursor: pointer;
+  width: 26%;
+  text-decoration: none;
+  margin-top: 1rem;
+  background: #3aaa8e;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+button#changeImageButton {
+  font-size: 14px;
+  padding: 5px 20px;
+  width: 170px;
+  height: 40px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+#voltar a {
+  font-size: 14px;
+  padding: 12px 20px;
+  width: 170px;
+  height: 40px;
+  margin: 6px;
+  text-decoration: none;
+  list-style: none;
+  background-color: #3aaa8e;
+  border-radius: 6px;
+  color: #fff;
+}
+
+main form input[type="submit"]:hover {
+  background: #266d5b;
+}
+
+/* Imagem da tela Login */
+section.images {
+  display: inline-block;
+  align-items: flex-end;
+  padding: 2rem;
+  width: 33%;
+}
+
+.slogan {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: 30px;
+  color: #636fa4;
+  margin-top: 21%;
+}
+
+section.images img {
+  width: 62%;
+  border-radius: 10px;
+}
+
+.info-usuario {
+  font-size: 19px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 18px;
+  margin-top: 14px;
+  margin-bottom: 0;
+
+  color: #266d5b;
+}

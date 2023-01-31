@@ -1,0 +1,204 @@
+/* Resetar formatação padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    
+    color: rgb(121, 120, 120);
+    font-weight: 500;
+    display: flex;
+    height: 130vh;
+    background-image: radial-gradient( circle farthest-corner at 40% 50%,  rgb(223, 235, 247) 60%, 
+    rgba(176, 218, 230, 0.63) 90.8% );
+}
+
+main{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+/*  Faça seu Cadastro*/
+main h1 {
+color: #3aaa8e;
+font-size: 2rem;
+margin-bottom: 0.5rem;
+}
+
+/* fontes formulário nome - email e etc*/
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+label{
+    margin: 15px;
+    margin-bottom: 0;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+/*  personalizar input formulario*/
+main form input {
+    background: #323541;
+    width: 350px;
+    height: 46px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166,166,166);
+    font-size: 16px;
+    border: 1px solid #040b18;
+    border-radius: 8px;
+}
+
+/* Botão Enviar Foto */
+input[type="file"] {
+    background-color: #323541;
+    border-radius: 10px;
+}
+/* Botão Enviar foto */
+.custom-file-input {
+    border-radius: 10px;
+}
+/* Botao Enviar FOto */
+.custom-file-input::-webkit-file-upload-button {
+    color: rgba(166,166,166);
+}
+
+
+/* Imagem estudante e texto apresentação */
+section.images {
+    display: inline-block;
+    align-items: flex-end;
+    padding: 1rem;
+    width: 35%;   
+}
+
+.texto-sobre {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 20px;
+    
+
+}
+
+.slogan {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2vh; 
+    font-size: 36px;
+    color: #636fa4;
+    margin-top: 60px;
+}
+
+.slogan:hover {
+    color: #40c5a4;
+    transition: all .7s ease-in-out;
+}
+    
+/*  imagem destaque Tela Cadastro Sistema*/
+section.images img {
+    width: 400px;
+    align-items: flex-start;
+    justify-content: flex-start;
+   
+}
+
+section.image.circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45 deg, #e8cbc0, #636fa4);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;  
+}
+
+#mensagem-cadastro{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.voltar {
+    background-color: #0367A6;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1.2s ease-in-out;
+}
+
+.voltar:hover {
+    background-color: #074f7c;
+    transition: all 1.2s ease-in-out;
+}
+
+#animated-image {
+    transition: transform 1.2s ease-in-out;
+}
+
+#animated-image:hover {
+    transform: all 1.2s ease-in-out;
+    transform: scale(1.07) rotate(2deg);
+}
+
+#botao-foto {
+    background-color: #0367A6;
+    width: 130px;
+    border: none;
+    color: #f7e8e3;
+    margin: 50px;
+    transition: all 0.7s ease;
+    border-radius: 35px;
+}
+
+
+.botao-cadastrar{
+    background-color: #0367A6;
+    width: 130px;
+    border: none;
+    color: #f7e8e3;
+    margin: 50px;
+    transition: all 0.7s ease;
+    border-radius: 35px;
+}
+
+.botao-cadastrar:hover{
+    background-color: #074f7c;
+    transition: all 0.7s ease;
+    width:150px ;
+    transform: scale(1.04);
+
+}
+
+
+

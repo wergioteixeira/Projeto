@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+/* paletas de cores Referências
+#BF1B75 - Magenta
+#0367A6 - Azul
+#d43350 - Magenta
+*/
+
+/* Resetar formatação padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* configurações do corpo HTML */
+body {
+    background-color: rgba(255, 255, 255, 0.582);
+    color: rgb(120, 121, 121);
+    font-weight: 500;
+    display: flex;
+    height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 40% 50%,  rgb(223, 235, 247) 60%, rgba(176, 218, 230, 0.63) 90.8% );
+}
+
+main{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Titulo Acessar sua conta */
+main h1 {
+color: #3aaa8e;
+font-size: rem;
+margin-bottom: 0.5rem;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+
+main .alternative {
+    margin-top: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.445);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.445);
+}
+
+main .alternative span::after{
+    left: 40px;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+
+}
+
+/* imagem Tela Login */
+main .image-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+/*  personalizar input formulario*/
+main form input {
+    background: #323541;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166,166,166);
+    font-size: 1rem;
+    border: 1px solid #040b18;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border:none;
+    border-radius: 32px;
+    background: #3aaa8e;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover{
+    background: #266d5b;
+}
+
+/* Imagem da tela Login */
+section.images {
+    display: inline-block;
+    align-items: flex-end;
+    padding: 1rem;
+    width: 35%;   
+}
+
+#botao-entrar {
+    width: 300px;
+}
+
+.slogan {
+    display: flex;
+    align-items: flex-start;
+    padding: 6rem; 
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #65A603;
+    transition: all 1.2s ease-in-out;
+}
+
+/* Animação Slogan */
+.slogan:hover {
+    color: #209174;
+    transition: all 1.2s ease-in-out;
+    transform: all 1.4s ease-in-out;
+    transform: scale(1.05);
+}
+    
+
+section.images img {
+    width: 90%;
+}
+
+section.image.circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45 deg, #e8cbc0, #636fa4);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;  
+}
+
+#mensagem-cadastro{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.cadastro {
+    background-color: #d43350;
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 1.2s ease-in-out;
+    
+}
+
+.cadastro:hover {
+    background-color: #832b2b;
+    transition: all 1.2s ease-in-out;
+}
+
+#animated-image {
+    transition: transform 1.4s ease-in-out;
+}
+
+#animated-image:hover {
+    transform: all 1.4s ease-in-out;
+    transform: scale(1.05) rotate(1.08deg);
+}
+
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 5%;
+    width: 100%;
+    height: 0px;
+    font-size: 14px;
+    font-style: italic;
+    justify-content: center;
+   
+}

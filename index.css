@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle farthest-corner at 40% 20%,
+    rgb(232, 242, 252) 45%,
+    rgba(176, 218, 230, 0.63) 90.8%
+  );
+  background-image: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* video webcam */
+.child {
+  position: relative;
+  top: 10%;
+  left: 40%;
+  margin: -50px 90px 0 -90px;
+}
+
+/* posição botão */
+.botoes {
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translate(-31%, 50%);
+}
+
+/* texto botão */
+.voltar {
+  background-color: #3aaa8e;
+  cursor: pointer;
+  color: azure;
+  border: none;
+  padding: 1vh;
+  border-radius: 9px;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: all 1s ease-in-out;
+}
+
+.voltar:hover {
+  background-color: #206856;
+  transition: all 1s ease-in-out;
+}
+
+/* fonte Confirmar Foto */
+#download-text a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgb(206, 59, 59);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.texto-voltar {
+  text-decoration: none;
+  color: azure;
+}
+
+/* frame do video */
+video {
+  height: 350px;
+  border: 4px solid;
+  border-color: #3aaa8e;
+  margin-top: 2.3vh;
+  border-radius: 16px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+}
+
+/* imagem aparece ao lado quando tira a foto */
+canvas {
+  height: 350px;
+  border-radius: 16px;
+}
+
+.texto-empresa {
+  margin-top: 99px;
+  margin: 100px 0px 45px 50px;
+  width: 30%;
+  line-height: 1.3;
+  font-size: 18px;
+  color: #252525a4;
+  text-align: justify;
+}
+
+footer {
+  color: #e9e9e9;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #206856af;
+  width: 100%;
+  text-align: center;
+}

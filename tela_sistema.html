@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\Style-telasistema.css" />
+    <title>Sistema</title>
+
+    <script>
+            // função do botão sair
+            function logout() {
+              if (confirm("Deseja sair?")) {
+                window.location.href = "tela_login.php";
+              }
+            }
+
+            var credito = document.getElementById("credito").value;
+            if (credito === "" || isNaN(credito)) {
+              alert("Digite um valor válido!");
+            }
+
+
+          // trocar foto
+          document.getElementById("changeImageButton").addEventListener("click", function () {
+            document.getElementById("fileInput").click();
+          });
+
+          //função para ler o arquivo e atualizar o src
+          document.getElementById("fileInput").addEventListener("change", function () {
+            var file = this.files[0];
+            var reader = new FileReader();
+            reader.onload = function () {
+                document.getElementById("image").src = reader.result;
+            };
+            reader.readAsDataURL(file);
+          });
+          
+          
+      
+               
+    </script>
+  </head>
+  <body>
+    <main>
+      <img src="image\LOGO-FACE-PASS.png" alt="" />
+      <h1>Seja bem vindo(a)</h1>
+
+      <form >
+        <label for="credito">
+          <span>Adicionar Créditos</span>
+          <input type="number" id="credito" name="name" step="any" required />
+        </label>
+
+        <label for="password">
+          <span>Senha</span>
+          <input type="password" id="password" name="password" required />
+
+          <label for="credito">Forma de Pagamento*</label>
+    <input type="text" list="opcoes" required />
+    <datalist id="opcoes">
+        <option value="Pix"></option>
+        <option value="Boleto"></option>
+        <option value="Cartão de Crédito"></option>
+        <option value="Cartão de Débito"></option>
+      </datalist>
+    
+    <input class="botao-confirmar" type="submit" value="Confirmar" />
+      </form>
+    </main>
+
+    <section class="images">
+      <h2 class="slogan">Informações do Usuário</h2>
+      <img id="image" src="image\Mulher.png" alt="Foto usuário" />
+      <input type="file" id="fileInput" style="display:none" accept="image/*">
+
+      <!--FOTO DO USUARIO-->
+      <div class="info-usuario">
+        <p>Usuário: Ana</p>
+        <p>Email: ana@gmail.com</p>
+        <p id="credit">Seus créditos: R$ 30,00</p>
+        <input type="file" id="fileInput" style="display:none" accept="image/*">
+
+        <button id="changeImageButton">
+         <a class="link" href="index.html">Tirar Foto</a>
+        </button>
+
+        <button id="changeImageButton">
+          <a class="link" href="atualizar_cadastro.html">Atualizar Cadastro</a>
+        </button>
+      </div>
+      <div class="circle"></div>
+    </section>
+    <!-- botão sair do sistema -->
+    <button class="botao-sair" onclick="logout()">Sair</button>
+  </body>
+</html>
